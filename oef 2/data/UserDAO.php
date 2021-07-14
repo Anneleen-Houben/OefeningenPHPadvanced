@@ -17,8 +17,9 @@ class UserDAO {
         $user = null;
         if ($rij) { 
             $user = new User((int)$rij["id"], $rij["gebruikersnaam"], $rij["wachtwoord"]);
-            $dbh = null;
+            
         } 
+	$dbh = null;
         return $user;
     }
 
